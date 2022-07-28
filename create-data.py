@@ -18,7 +18,8 @@ from collections import OrderedDict
 
 import yaml
 
-minimum_timestamp = 1325376000.0  # 2012/01/01
+# The first ROS 2 commits were in May 2014, as far as I can tell.
+minimum_timestamp = 1398920400.0  # 2014/05/01
 
 
 with open('tooling-repos.yaml', 'r') as h:
