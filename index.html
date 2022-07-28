@@ -120,7 +120,7 @@ var svg = d3.select("body").append("svg")
 d3.select("body").append("div")
   .attr("class", "title")
   .style("width", width + "px")
-  .text("ROS Contributions");
+  .text("ROS 2 Contributions");
 // current timestamp
 var current_time = d3.select("body").append("div")
   .attr("class", "time")
@@ -137,11 +137,6 @@ var commit_count = d3.select("body").append("div")
 var author_count = d3.select("body").append("div")
   .attr("class", "authors")
   .style("width", width + "px");
-// link to GitHub repository
-d3.select("body").append("div")
-  .attr("class", "github")
-  .style("width", width + "px")
-  .text("https://github.com/dirk-thomas/rosworld2020_ros-contributions");
 
 var force = d3.layout.force()
   .nodes(repositories)
