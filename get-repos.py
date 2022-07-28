@@ -23,6 +23,8 @@ index = get_index(get_index_url())
 for name, d in index.distributions.items():
     if d['distribution_status'] not in ('active', 'rolling'):
         continue
+    if d['distribution_type'] != 'ros2':
+        continue
     d = get_cached_distribution(index, name)
     for r in d.repositories.values():
         if r.source_repository is None:
