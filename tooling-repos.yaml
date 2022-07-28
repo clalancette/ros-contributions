@@ -49,3 +49,20 @@ ros-infrastructure/rospkg:
 ros-infrastructure/roswiki:
   master:
   - tools
+ros2/ros2_documentation:
+  rolling:
+  - tools
+  humble:
+  - tools
+  galactic:
+  - tools
+  foxy:
+  - tools
+  eloquent:
+  - tools
+  dashing:
+  - tools
+  crystal:
+  - tools
+  master:
+  - tools
