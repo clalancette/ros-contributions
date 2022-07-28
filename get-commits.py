@@ -20,8 +20,7 @@ with open('github.yaml') as h:
 assert 'token' in data
 assert data['token']
 
-headers = {'Authorization': data['token']}
-
+headers = {'Authorization': 'Bearer %s' % (data['token'])}
 
 def get_commits(owner_name, repo_name, branch):  # noqa: D103
     commits = []
